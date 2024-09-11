@@ -1,5 +1,5 @@
 <script setup>
-
+import SelectedNumber from './SelectedNumber.vue';
 </script>
 
 <template>
@@ -11,10 +11,14 @@
             <table class="min-w-full text-left text-sm font-light text-surface dark:text-white">
               <thead class="border-b border-neutral-200 font-medium dark:border-white/10">
                 <tr>
-                  <th scope="col" class="whitespace-nowrap text-[#C7261E] cursor-pointer px-6 py-4"><v-icon name="fa-columns" /> COLUMNAS</th>
-                  <th scope="col" class="whitespace-nowrap text-[#C7261E] cursor-pointer px-6 py-4"><v-icon name="fa-filter" /> FILTROS</th>
-                  <th scope="col" class="whitespace-nowrap text-[#C7261E] cursor-pointer px-6 py-4"><v-icon name="fa-bars" /> DENSIDAD</th>
-                  <th scope="col" class="whitespace-nowrap text-[#C7261E] cursor-pointer px-6 py-4"><v-icon name="fa-file-export" /> EXPORTAR</th>
+                  <th scope="col" class="whitespace-nowrap text-[#C7261E] cursor-pointer px-6 py-4"><v-icon
+                      name="fa-columns" /> COLUMNAS</th>
+                  <th scope="col" class="whitespace-nowrap text-[#C7261E] cursor-pointer px-6 py-4"><v-icon
+                      name="fa-filter" /> FILTROS</th>
+                  <th scope="col" class="whitespace-nowrap text-[#C7261E] cursor-pointer px-6 py-4"><v-icon
+                      name="fa-bars" /> DENSIDAD</th>
+                  <th scope="col" class="whitespace-nowrap text-[#C7261E] cursor-pointer px-6 py-4"><v-icon
+                      name="fa-file-export" /> EXPORTAR</th>
                 </tr>
                 <tr>
                   <th scope="col" class="px-6 py-4">Carta porte</th>
@@ -65,19 +69,13 @@
     </div>
 
     <div class="flex justify-end whitespace-nowrap">
-      <div class="flex justify-end columns-2">
-        <p>Filas por pagina: </p>
-        <select name="" id="">
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-        </select>
-      </div>
+      <SelectedNumber/>
       <nav aria-label="Page navigation example">
         <ul class="list-style-none flex">
           <li>
             <a
-              class="pointer-events-none relative block rounded-full bg-transparent px-3 py-1.5 text-sm text-surface/50 transition duration-300 dark:text-neutral-400"><v-icon name="fa-angle-left" /></a>
+              class="pointer-events-none relative block rounded-full bg-transparent px-3 py-1.5 text-sm text-surface/50 transition duration-300 dark:text-neutral-400"><v-icon
+                name="fa-angle-left" /></a>
           </li>
           <li>
             <a class="relative block rounded-full bg-transparent px-3 py-1.5 text-sm text-surface transition duration-300 hover:bg-neutral-100 focus:bg-neutral-100 focus:text-primary-700 focus:outline-none active:bg-neutral-100 active:text-primary-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700  dark:focus:text-primary-500 dark:active:bg-neutral-700 dark:active:text-primary-500"
