@@ -10,11 +10,9 @@ export default {
 </script>
 
 <template>
-    <div class="flex justify-end">
-        <p>Filas por pagina: </p>
-        <select>
+        <label for="numbers">Filas por pagina: </label>
+        <select name="numbers">
             <option class="block w-200 m-20" v-for="numero in rango" :key="numero" :value="numero">{{ numero }}</option>
         </select>
-    </div>
 </template>
   
